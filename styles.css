@@ -51,6 +51,9 @@ h1 em { color: var(--blue); font-style: normal; }
 .policy-copy { color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
 .policy-copy p:first-child { margin-top: 0; }
 .policy-copy strong { color: var(--ink); }
+.confirmation { display: grid; grid-template-columns: .6fr 1.4fr; gap: clamp(2rem, 7vw, 6rem); margin: 2rem 0 6rem; padding: 2rem; border: 1px dashed var(--blue); border-radius: 1rem; }
+.confirmation h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); }
+.confirmation blockquote { margin: 0; color: var(--muted); font-size: 1.02rem; line-height: 1.65; }
 
 .notice { max-width: 780px; margin: 6rem auto; }
 .notice > p:not(.section-label) { color: var(--muted); line-height: 1.7; }
@@ -85,7 +88,7 @@ footer a { font-weight: 700; }
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; padding-block: 1.2rem; }
   nav { gap: .85rem; }
-  .panel, .samples, .link-grid { grid-template-columns: 1fr; }
+  .panel, .confirmation, .samples, .link-grid { grid-template-columns: 1fr; }
   .panel { padding: 1.5rem; }
   .hero { padding-top: 4.5rem; }
   h1 { font-size: clamp(3rem, 15vw, 5rem); }
